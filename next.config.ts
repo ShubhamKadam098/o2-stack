@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
-import "@/env/client";
-import "@/env/server";
+import "@/lib/env/client";
+import "@/lib/env/server";
 
 const nextConfig: NextConfig = {
   /* config options here */
