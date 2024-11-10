@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <QueryProvider>
-        <html lang="en" suppressHydrationWarning>
-          <body className={`${GeistSans.className} antialiased`}>
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${GeistSans.className} antialiased`}>
+          <QueryProvider>
             <ThemeProvider
               attribute="class"
               defaultTheme="system"
@@ -28,9 +28,9 @@ export default function RootLayout({
             >
               {children}
             </ThemeProvider>
-          </body>
-        </html>
-      </QueryProvider>
+          </QueryProvider>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
